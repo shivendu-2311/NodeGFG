@@ -1,7 +1,10 @@
 import * as http from "http"
 const server = http.createServer((request, response) =>{
     if(request.url == "/a"){
-        response.write("api is invoked");
+        response.write("api a is invoked");
+    }
+    if(request.url == "/b"){
+        response.write("api b is invoked");
     }
     response.end();
 });

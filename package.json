@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev simpleNode.ts"
+    "simplenode": "ts-node-dev --respawn  simpleNode.ts",
+    "simpleKoa": "ts-node-dev --respawn simpleKoa.ts",
+    "start": "ts-node-dev --respawn koaSql.ts"
   },
   "dependencies": {
     "@koa/cors": "^3.1.0",
@@ -13,6 +15,7 @@
     "@types/pg": "^8.6.0",
     "apollo-server": "^2.25.1",
     "apollo-server-koa": "^2.25.1",
+    "@types/koa-router": "7.4.4",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "graphql": "^15.8.0",
